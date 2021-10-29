@@ -1,0 +1,134 @@
+@import "~antd/dist/antd.less";
+@import "~antd/lib/style/themes/default.less";
+
+.ant-modal-footer,
+.ant-modal-close {
+  display: none;
+}
+.ant-modal div {
+  border-radius: 20px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f3f2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4e4e4e;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.header h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #4e4e4e;
+}
+.app-main {
+  width: 75%;
+  min-height: 50vh;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+button {
+  border: none;
+}
+.new-item-created {
+  text-align: start;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.new-item-created section {
+  background-color: white;
+}
+
+.complate,
+.complate section {
+  color: white;
+  background-color: #1de90f;
+}
+
+.cansle,
+.cansle section {
+  background-color: #eb3737;
+  color: white;
+}
+.group-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 47px;
+}
+.group-action button {
+  margin-left: 15px;
+}
+
+.span-date {
+  font-size: 10px;
+}
+.span-name {
+  font-size: 12px;
+}
+
+.complate section .ant-row .ant-col-3,
+.cansle section .ant-row .ant-col-3 {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.desc-empty-todos {
+  width: 40%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .app-main {
+    width: 80%;
+  }
+  .desc-empty-todos {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .app-main {
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .desc-empty-todos {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-main {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .group-action button {
+    margin-left: 5px;
+  }
+  .btns-modal-edit {
+    margin-top: 20px;
+  }
+  .desc-empty-todos {
+    width: 100%;
+  }
+}
